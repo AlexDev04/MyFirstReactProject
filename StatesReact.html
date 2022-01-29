@@ -24,12 +24,12 @@
 
             timerTick() {
                 this.setState({
-                    strikes: this.state.strikes + 100
+                    strikes: this.state.strikes + 1
                 });
             }
 
             componentDidMount() {
-                setInterval(this.timerTick, 1000);
+                setInterval(this.timerTick, 10);
             }
 
             render() {
